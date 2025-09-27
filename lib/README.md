@@ -14,4 +14,3 @@ curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/develop/
 # Перезагрузите udev службу
 sudo udevadm control --reload-rules
 sudo udevadm trigger
-b
