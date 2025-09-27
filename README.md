@@ -11,8 +11,9 @@ sudo usermod -a -G dialout $USER
 sudo usermod -a -G uucp $USER
 ```
 # Установите udev-правила для PlatformIO
+```
 curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules | sudo tee /etc/udev/rules.d/99-platformio-udev.rules
-
+```
 # Перезагрузите udev службу
 sudo udevadm control --reload-rules
 sudo udevadm trigger
